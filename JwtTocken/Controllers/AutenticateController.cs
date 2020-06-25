@@ -89,7 +89,7 @@ namespace JwtToken.Controllers
         }
 
         [HttpPost]
-        [Route("register-admin")]
+        [Route("registeradmin")]
         public async Task<IActionResult> RegisterAdmin([FromBody] RegisterModel model)
         {
             var userExists = await userManager.FindByNameAsync(model.Username);
